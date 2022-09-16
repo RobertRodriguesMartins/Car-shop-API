@@ -1,5 +1,5 @@
 enum CarError {
-  payload = "invalid Payload",
+  payload = 'invalid Payload',
 }
 
 export default CarError;
