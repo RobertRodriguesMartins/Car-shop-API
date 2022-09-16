@@ -3,9 +3,9 @@ import chai from "chai";
 import chaiAsPromised from "chai-as-promised";
 import Car from "../../../models/Car";
 import CarService from "../../../services/Car";
-import { createPayload, createResponse } from "../mocks/car";
+import { createResponse } from "../mocks/car";
 import carValidator from "../../../services/validators/car";
-import CarError from "../../../errors/payload";
+import CarError from "../../../errors/carError";
 import { ZodError } from "zod";
 import { ICar } from "../../../interfaces";
 
