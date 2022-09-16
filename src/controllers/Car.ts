@@ -7,7 +7,7 @@ class CarController {
     this.carService = service;
   }
 
-  async create(req: Request, res: Response): Promise<Response<ICar>> {
+  async create(req: Request, res: Response<ICar>): Promise<Response<ICar>> {
     const payload: unknown = req.body;
 
     const response = await this.carService.create(payload);
